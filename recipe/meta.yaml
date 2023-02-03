@@ -1,5 +1,5 @@
 {% set name = "expelliarmus" %}
-{% set version = "1.1.11" %}
+{% set version = "1.1.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/expelliarmus-{{ version }}.tar.gz
-  sha256: d630179b4fcf5d0d58a6438119b0571b6d6a2e2ab4831eeb13014e36a4e15f23
+  sha256: 69978d115af857016b82a78387a4d78ee952ed802998b9cf778feb80393d2c3d
 
 build:
   script: {{ PYTHON }} -m pip install . -vv

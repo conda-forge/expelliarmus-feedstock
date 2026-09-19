@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/expelliarmus-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/expelliarmus-{{ version }}.tar.gz
   sha256: 69978d115af857016b82a78387a4d78ee952ed802998b9cf778feb80393d2c3d
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 3
+  number: 4
 
 requirements:
   build:
